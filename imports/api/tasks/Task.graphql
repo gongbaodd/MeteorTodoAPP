@@ -1,0 +1,14 @@
+type Task {
+    _id: String!
+    name: String!
+    goals: [Goal]
+    done: Boolean
+}
+
+type Query {
+    tasks: [Task]
+}
+
+type Mutation {
+    createTask(name: String!): Task
+}
